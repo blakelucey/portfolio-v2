@@ -6,11 +6,28 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 // import Date from '../components/date'
 //mui
-import { Container } from "@mui/material";
+import { Container, ThemeProvider, createTheme, CssBaseline } from "@mui/material";
+
+const theme = createTheme({
+  palette: {
+    type: 'dark',
+    primary: {
+      main: '#5893df',
+    },
+    secondary: {
+      main: '#2ec5d3',
+    },
+    background: {
+      default: '#192231',
+      paper: '#24344d',
+    },
+  },
+});
 
 export default function Home() {
   return (
-    <div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
       <Container>
         <Image
           priority
@@ -20,6 +37,6 @@ export default function Home() {
           className={utilStyles.borderCircle}
         />
       </Container>
-    </div>
+    </ThemeProvider>
   );
 }
