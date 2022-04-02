@@ -7,6 +7,7 @@ import Link from "next/link";
 // import Date from '../components/date'
 //mui
 import { Container, ThemeProvider, createTheme, CssBaseline } from "@mui/material";
+import ResponsiveAppBar from '../components/AppBar';
 
 const theme = createTheme({
   palette: {
@@ -28,14 +29,9 @@ export default function Home() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <ResponsiveAppBar />
       <Container>
-        <Image
-          priority
-          width={108}
-          height={108}
-          src="/images/profile.jpg"
-          className={utilStyles.borderCircle}
-        />
+       
       </Container>
     </ThemeProvider>
   );
