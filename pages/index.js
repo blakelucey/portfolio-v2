@@ -51,7 +51,7 @@ export default function Home() {
           divider={
             <Divider
               orientation="horizontal"
-              color="rgba(255, 255, 255, 0.12)"
+              color={theme.divider}
               flexItem
             />
           }
@@ -64,14 +64,13 @@ export default function Home() {
             ></Typography>
           </Paper>
           <br></br>
-          <Divider variant="fullWidth" light={true} />
           <br></br>
           <Stack
             direction="row"
             divider={
               <Divider
                 orientation="vertical"
-                color="rgba(255, 255, 255, 0.12)"
+                color={theme.divider}
                 flexItem
               />
             }
@@ -122,6 +121,9 @@ export default function Home() {
               </CardContent>
             </Card>
           </Stack>
+          <br></br>
+          <br></br>
+          
         </Stack>
       </Container>
       <br></br>
