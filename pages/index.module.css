@@ -8,5 +8,6 @@
 
 .card {
     padding: 30px;
-    margin: 30px;
+    width: 400px;
+    height: 400px;
 }

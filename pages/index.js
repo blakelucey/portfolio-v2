@@ -20,6 +20,7 @@ import {
 } from "@mui/material";
 import ResponsiveAppBar from "../components/AppBar/AppBar";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
+import Footer from '../components/StickyFooter/StickyFooter';
 
 const theme = createTheme({
   palette: {
@@ -123,6 +124,9 @@ export default function Home() {
           </Stack>
         </Stack>
       </Container>
+      <br></br>
+      <br></br>
+      <Footer color="rgb(121, 168, 229)"/>
     </ThemeProvider>
   );
 }
