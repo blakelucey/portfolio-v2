@@ -1,0 +1,12 @@
+.padding {
+    padding: 30px;
+}
+
+.onHover:hover {
+    background-color: '#2ec5d3';
+  }
+
+.card {
+    padding: 30px;
+    margin: 30px;
+}

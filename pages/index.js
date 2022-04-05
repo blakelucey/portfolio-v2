@@ -1,10 +1,7 @@
 import Head from "next/head";
 import Image from "next/Image";
-// import Layout, { siteTitle } from '../components/layout'
-import utilStyles from "../styles/utils.module.css";
-// import { getSortedPostsData } from '../lib/posts'
 import Link from "next/link";
-// import Date from '../components/date'
+import styles from "./index.module.css";
 //mui
 import {
   Container,
@@ -19,8 +16,9 @@ import {
   CardActionArea,
   Divider,
   Grid,
+  Stack,
 } from "@mui/material";
-import ResponsiveAppBar from "../components/AppBar";
+import ResponsiveAppBar from "../components/AppBar/AppBar";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 
 const theme = createTheme({
@@ -47,34 +45,83 @@ export default function Home() {
       <br></br>
       <br></br>
       <Container size="xs">
-        <Grid>
-          <Grid>
-            <Paper elevation={11}>
-              <Typography variant="h1" color="#fff">
-                lorem ipsum
-              </Typography>
-            </Paper>
-          </Grid>
+        <Stack
+          direction="column"
+          divider={
+            <Divider
+              orientation="horizontal"
+              color="rgba(255, 255, 255, 0.12)"
+              flexItem
+            />
+          }
+        >
+          <Paper elevation={11}>
+            <Typography
+              variant="h4"
+              color="#fff"
+              className={styles.padding}
+            ></Typography>
+          </Paper>
           <br></br>
           <Divider variant="fullWidth" light={true} />
           <br></br>
-          <Grid>
+          <Stack
+            direction="row"
+            divider={
+              <Divider
+                orientation="vertical"
+                color="rgba(255, 255, 255, 0.12)"
+                flexItem
+              />
+            }
+            justifyContent="center"
+            alignItems="center"
+            spacing={12}
+          >
             <Card
               sx={{ maxWidth: 345 }}
               elevation={11}
-              className={utilStyles.onHover}
+              className={styles.card}
             >
               <CardContent>
                 <Typography gutterBottom variant="h5" color="#fff">
                   Exercise
                 </Typography>
                 <Typography variant="body2" color="#fff">
-                  lorem ipsum...
+                  I love exercising...
                 </Typography>
               </CardContent>
             </Card>
-          </Grid>
-        </Grid>
+          <Card
+            sx={{ maxWidth: 345 }}
+            elevation={11}
+            className={styles.card}
+            >
+            <CardContent>
+              <Typography gutterBottom variant="h5" color="#fff">
+                Outdoors
+              </Typography>
+              <Typography variant="body2" color="#fff">
+                Being outside...
+              </Typography>
+            </CardContent>
+          </Card>
+          <Card
+              sx={{ maxWidth: 345 }}
+              elevation={11}
+              className={styles.card}
+            >
+              <CardContent>
+                <Typography gutterBottom variant="h5" color="#fff">
+                  Travel
+                </Typography>
+                <Typography variant="body2" color="#fff">
+                  And traveling as much as possible...
+                </Typography>
+              </CardContent>
+            </Card>
+          </Stack>
+        </Stack>
       </Container>
     </ThemeProvider>
   );
