@@ -59,24 +59,36 @@ export default function Home() {
               <Divider orientation="vertical" color={theme.divider} flexItem />
             }
           >
-            {" "}
-            <Paper elevation={11} sx={{ maxWidth: 600, maxHeight: 1200 }}>
-              <Image
-                src="/images/profile.jpg"
-                height={500}
-                width={500}
-                priority
-              />
-            </Paper>
-            <Typography variant="h1" color="#fff" className={styles.padding}>
-              Hey, I'm Blake.
-            </Typography>
-            <br></br>
-            <Typography variant="body" color="#fff">
-              A software developer within the Food and Beverage distribution
-              industry. I develop software to help create more cost effective
-              processes for my employer.
-            </Typography>
+            <div className={styles.flex}>
+              <div className={styles.center_image}>
+                <Paper elevation={11} sx={{ minWidth: 600, minHeight: 600 }} className={styles.paper_intro}>
+                  <Image
+                    src="/images/profile.jpg"
+                    height={600}
+                    width={600}
+                    priority
+                    className={styleUtils.borderCircle}
+                  />
+                </Paper>
+              </div>
+              <div className={styles.padding}>
+                <div className={styles.flex_intro}>
+                  <Typography
+                    variant="h3"
+                    color="#fff"
+                    className={styles.padding}
+                  >
+                    Hey, I'm Blake.
+                  </Typography>
+                  <br></br>
+                  <Typography variant="body" color="#fff">
+                    A software developer within the Food and Beverage
+                    distribution industry. I develop software to help create
+                    more cost effective processes for my employer.
+                  </Typography>
+                </div>
+              </div>
+            </div>
           </Stack>
           <br></br>
           <br></br>
