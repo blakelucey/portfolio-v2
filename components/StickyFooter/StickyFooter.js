@@ -53,7 +53,7 @@ export default function Footer() {
       >
         <Container maxWidth="sm">
           <Typography variant="body1" color="#fff" className={styles.center}>
-            My sticky footer can be found here.
+            Blake Lucey's portfolio
           </Typography>
           <Copyright />
         </Container>

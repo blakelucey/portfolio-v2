@@ -46,7 +46,7 @@ export default function Home() {
       <ResponsiveAppBar />
       <br></br>
       <br></br>
-      <Container size="xs">
+      <Container size="md">
         <Stack
           direction="column"
           divider={
@@ -61,7 +61,11 @@ export default function Home() {
           >
             <div className={styles.flex}>
               <div className={styles.center_image}>
-                <Paper elevation={11} sx={{ minWidth: 600, minHeight: 600 }} className={styles.paper_intro}>
+                <Paper
+                  elevation={11}
+                  sx={{ minWidth: 600, minHeight: 600 }}
+                  className={styles.paper_intro}
+                >
                   <Image
                     src="/images/profile.jpg"
                     height={600}
@@ -73,15 +77,11 @@ export default function Home() {
               </div>
               <div className={styles.padding}>
                 <div className={styles.flex_intro}>
-                  <Typography
-                    variant="h3"
-                    color="#fff"
-                    className={styles.padding}
-                  >
+                  <Typography variant="h2" color="#fff">
                     Hey, I'm Blake.
                   </Typography>
                   <br></br>
-                  <Typography variant="body" color="#fff">
+                  <Typography variant="h6" color="#fff">
                     A software developer within the Food and Beverage
                     distribution industry. I develop software to help create
                     more cost effective processes for my employer.
@@ -91,6 +91,11 @@ export default function Home() {
             </div>
           </Stack>
           <br></br>
+          <br></br>
+          <br></br>
+          <Typography variant="h1" color="#fff">
+            About me...
+          </Typography>
           <br></br>
           <Stack
             direction="row"
