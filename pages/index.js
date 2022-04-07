@@ -47,6 +47,9 @@ export default function Home() {
       <ResponsiveAppBar />
       <br></br>
       <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <Container size="md">
         <Stack
           direction="column"
