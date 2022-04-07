@@ -8,7 +8,7 @@ import styles from './StickyFooter.module.css';
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="text.secondary" className={styles.center}>
+    <Typography variant="body2" color="#fff" className={styles.center}>
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
         Your Website
@@ -47,8 +47,8 @@ export default function Footer() {
           mt: 'auto',
           backgroundColor: (theme) =>
             theme.palette.mode === 'dark'
-              ? "rgb(61, 102, 156)"
-              : "rgb(61, 102, 156)",
+              ? "#24344d"
+              : "#24344d",
         }}
       >
         <Container maxWidth="sm">

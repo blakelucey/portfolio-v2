@@ -18,6 +18,7 @@ import {
   Divider,
   Grid,
   Stack,
+  Tooltip,
 } from "@mui/material";
 import ResponsiveAppBar from "../components/AppBar/AppBar";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
@@ -49,16 +50,11 @@ export default function Home() {
       <Container size="md">
         <Stack
           direction="column"
-          divider={
-            <Divider orientation="horizontal" color={theme.divider} flexItem />
-          }
+          // divider={
+          //   <Divider orientation="horizontal" color={theme.divider} flexItem />
+          // }
         >
-          <Stack
-            direction="column"
-            divider={
-              <Divider orientation="vertical" color={theme.divider} flexItem />
-            }
-          >
+          <Stack direction="row">
             <div className={styles.flex}>
               <div className={styles.center_image}>
                 <Paper
@@ -66,25 +62,51 @@ export default function Home() {
                   sx={{ minWidth: 600, minHeight: 600 }}
                   className={styles.paper_intro}
                 >
-                  <Image
-                    src="/images/profile.jpg"
-                    height={600}
-                    width={600}
-                    priority
-                    className={styleUtils.borderCircle}
-                  />
+                  <div className={styles.image}>
+                    <Image
+                      src="/images/profile.jpg"
+                      height={600}
+                      width={600}
+                      priority
+                      // className={styleUtils.borderCircle}
+                    />
+                  </div>
                 </Paper>
               </div>
               <div className={styles.padding}>
                 <div className={styles.flex_intro}>
                   <Typography variant="h2" color="#fff">
-                    Hey, I'm Blake.
+                    <div>
+                      <span className={styles.underline}>Hey, I'm </span>
+                      <span className={styles.underline}>Blake.</span>
+                    </div>
                   </Typography>
                   <br></br>
                   <Typography variant="h6" color="#fff">
-                    A software developer within the Food and Beverage
-                    distribution industry. I develop software to help create
-                    more cost effective processes for my employer.
+                    <div>
+                      <span className={styles.underline2}>
+                        I'm a software developer at{" "}
+                        <Link href="https://www.foodservicedirect.com/?gclid=Cj0KCQjwl7qSBhD-ARIsACvV1X3iEqSDp85ToLUF44qqHD75pdDNNb_l6pofNXW9Isi04TCScJsu5KIaAmW6EALw_wcB">
+                          <Tooltip
+                            title="Click here to be taken to foodservicedirect.com"
+                            arrow
+                          >
+                            <span>FoodServiceDirect.com.</span>
+                          </Tooltip>
+                        </Link>{" "}
+                      </span>
+
+                      <span className={styles.underline2}>
+                        {" "}
+                        My responsibilities include managing projects, and
+                        developing new software to help create more{" "}
+                      </span>
+                      <span className={styles.underline2}>
+                        {" "}
+                        cost effective processes for my{" "}
+                      </span>
+                      <span className={styles.underline2}>employer.</span>
+                    </div>
                   </Typography>
                 </div>
               </div>
@@ -93,9 +115,14 @@ export default function Home() {
           <br></br>
           <br></br>
           <br></br>
+          <Divider orientation="horizontal" color={theme.divider} flexItem />
+          <br></br>
+          <br></br>
           <Typography variant="h1" color="#fff">
-            About me...
+            <span className={styles.underline}>About me...</span>
           </Typography>
+          {/* <Divider orientation="horizontal" color={theme.divider} flexItem /> */}
+          <br></br>
           <br></br>
           <Stack
             direction="row"
@@ -106,44 +133,148 @@ export default function Home() {
             alignItems="center"
             spacing={12}
           >
-            <Card sx={{ maxWidth: 345 }} elevation={11} className={styles.card}>
-              <CardContent>
-                <Typography gutterBottom variant="h5" color="#fff">
-                  Exercise
-                </Typography>
-                <Typography variant="body2" color="#fff">
-                  I love exercising...
-                </Typography>
-              </CardContent>
+            <Card sx={{ minWidth: 250 }} elevation={11} className={styles.card}>
+              <CardActionArea>
+                <CardContent>
+                  <Typography gutterBottom variant="h5" color="#fff">
+                    Exercise
+                  </Typography>
+                  <Typography variant="body1" color="#fff">
+                    <span className={styles.underline3}>
+                      {" "}
+                      I love exercising...
+                    </span>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
             </Card>
-            <Card sx={{ maxWidth: 345 }} elevation={11} className={styles.card}>
+            <Card sx={{ minWidth: 250 }} elevation={11} className={styles.card}>
               <CardContent>
                 <Typography gutterBottom variant="h5" color="#fff">
                   Outdoors
                 </Typography>
-                <Typography variant="body2" color="#fff">
-                  Being outside...
+                <Typography variant="body" color="#fff">
+                  <span className={styles.underline3}> Being outside...</span>
                 </Typography>
               </CardContent>
             </Card>
-            <Card sx={{ maxWidth: 345 }} elevation={11} className={styles.card}>
+            <Card sx={{ minWidth: 250 }} elevation={11} className={styles.card}>
               <CardContent>
                 <Typography gutterBottom variant="h5" color="#fff">
                   Travel
                 </Typography>
-                <Typography variant="body2" color="#fff">
-                  And traveling as much as possible...
+                <Typography variant="body" color="#fff">
+                  <span className={styles.underline3}>
+                    {" "}
+                    And traveling as much as possible...
+                  </span>
                 </Typography>
               </CardContent>
             </Card>
           </Stack>
           <br></br>
-          <br></br>
+          <Stack direction="column">
+            <br></br>
+            <br></br>
+            <br></br>
+            <Divider orientation="horizontal" color={theme.divider} flexItem />
+            <br></br>
+            <br></br>
+            <br></br>
+            <Typography variant="h1" color="#fff">
+              <div className={styles.align_right}>
+                <span className={styles.underline}>Coding Portfolio...</span>
+              </div>
+            </Typography>
+            <br></br>
+            <br></br>
+            <Stack
+              direction="row"
+              divider={
+                <Divider
+                  orientation="vertical"
+                  color={theme.divider}
+                  flexItem
+                />
+              }
+              justifyContent="center"
+              alignItems="center"
+              spacing={4}
+            >
+              <Card
+                sx={{ minHeight: 400, minWidth: 400 }}
+                elevation={11}
+                className={styles.card2}
+              >
+                <CardContent>
+                  <Typography gutterBottom variant="h5" color="#fff">
+                    Automated Mass Email
+                  </Typography>
+                  <Typography variant="body" color="#fff">
+                    <span className={styles.underline3}>
+                      {" "}
+                      Full-stack project. Throughout, the course of this project
+                      I two api's to fetch data from MySql and handled this data
+                      in such a way that mass emails were sent out based on
+                      certain criteria.
+                    </span>
+                  </Typography>
+                </CardContent>
+              </Card>
+              <Card
+                sx={{ minHeight: 400, minWidth: 400 }}
+                elevation={11}
+                className={styles.card2}
+              >
+                <CardContent>
+                  <Typography gutterBottom variant="h5" color="#fff">
+                    Computer Vision Project
+                  </Typography>
+                  <Typography variant="body" color="#fff">
+                    <span className={styles.underline3}>
+                      <li>
+                        Acted as the Project Manager in coordinating with my
+                        Tech Lead and the data science team in Pakistan.
+                      </li>
+                    </span>
+                    <span className={styles.underline3}>
+                      <li>
+                        Collected a dataset for training, implemented the
+                        trained model, and ensured that each component of this
+                        project functioned as intended.
+                      </li>
+                    </span>
+                    <span className={styles.underline3}>
+                      <li>
+                        Upon successfully proving this concept we were able to
+                        implement computer vision on all warehouse shipping
+                        lines.
+                      </li>
+                    </span>
+                  </Typography>
+                </CardContent>
+              </Card>
+              <Card
+                sx={{ minHeight: 400, minWidth: 400 }}
+                elevation={11}
+                className={styles.card2}
+              >
+                <CardContent>
+                  <Typography gutterBottom variant="h5" color="#fff">
+                    Lorem Ipsum
+                  </Typography>
+                  <Typography variant="body" color="#fff">
+                    <span className={styles.underline3}> lorem ipsum...</span>
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Stack>
+          </Stack>
         </Stack>
       </Container>
       <br></br>
       <br></br>
-      <Footer color="rgb(121, 168, 229)" />
+      <Footer />
     </ThemeProvider>
   );
 }

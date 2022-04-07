@@ -14,8 +14,10 @@ import MenuItem from "@mui/material/MenuItem";
 import Image from "next/image";
 import styles from "./AppBar.module.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FilePresentIcon from "@mui/icons-material/FilePresent";
 
-const pages = ["Contact", "About", "Blog"];
+const pages = ["Get in Touch", "About", "Coding Portfolio"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const ResponsiveAppBar = () => {
@@ -86,14 +88,14 @@ const ResponsiveAppBar = () => {
               ))}
             </Menu>
           </Box>
-          <Typography
+          {/* <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
           >
             LOGO
-          </Typography>
+          </Typography> */}
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
@@ -101,20 +103,41 @@ const ResponsiveAppBar = () => {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                <div className={styles.underline}>{page}</div>
               </Button>
             ))}
           </Box>
-          <Box sx={{ flexGrow: 0 }}>
+          <Box>
             {/* Div here for css styling */}
-            <div>
-              <GitHubIcon fontSize="large" color="#fff" />
-              <Image
-                width={45}
-                height={45}
-                src="/images/stack-overflow.svg"
-                color="#fff"
-              />
+            <div className={styles.flex}>
+              <div className={styles.button_github}>
+              <Tooltip title="Open GitHub" arrow>
+                <GitHubIcon fontSize="large" color="#fff" >
+                  <Button></Button>
+                </GitHubIcon>
+              </Tooltip>
+              </div>
+              <div className={styles.button_linkedIn}>
+              <Tooltip title="Open LinkedIn" arrow>
+                <LinkedInIcon fontSize="large" color="#fff">
+                  <Button></Button>
+                </LinkedInIcon>
+              </Tooltip>
+              </div>
+              <div className={styles.button_pdf}>
+              <Tooltip title="Open Résumé via Dropbox" arrow>
+                <FilePresentIcon fontSize="large" color="#fff">
+                  <Button></Button>
+                </FilePresentIcon>
+              </Tooltip>
+              </div>
+            </div>
+          </Box>
+          <Box>
+            <div className={styles.center}>
+              <Typography variant="h3">
+                Blake Lucey
+              </Typography>
             </div>
           </Box>
         </Toolbar>

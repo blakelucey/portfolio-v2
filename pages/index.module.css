@@ -8,10 +8,25 @@
 
 .card {
   padding: 30px;
-  width: 400px;
+  width: auto;
   height: 400px;
-}
+  box-shadow: -32px -12px 20px 1px #000;  
 
+}
+.card2 {
+  padding: 30px;
+  /* width: 600px; */
+  height: auto;
+  box-shadow: -32px -12px 20px 1px #000;  
+}
+.card2:hover{
+  -webkit-animation: color-change-2x 2s ease-in-out both;
+  animation: color-change-2x 2s ease-in-out both;
+}
+.image {
+  box-shadow: -32px -12px 20px 1px #000;  
+  padding: 30px;
+}
 .card:hover {
   -webkit-animation: color-change-2x 2s ease-in-out both;
   animation: color-change-2x 2s ease-in-out both;
@@ -57,22 +72,21 @@
 }
 
 .flex {
-        display: flex;
-        flex-direction: row;
-
+  display: flex;
+  flex-direction: row;
 }
 .flex_intro {
-        display: flex;
-        flex-direction: column;
-        padding: 80px;
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
 }
 
 /* Shadow drop effect */
 
 .paper_intro:hover {
-	-webkit-animation: shadow-drop-2-tl 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: shadow-drop-2-tl 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                
+  -webkit-animation: shadow-drop-2-tl 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: shadow-drop-2-tl 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /* ----------------------------------------------
@@ -87,43 +101,42 @@
  * animation shadow-drop-2-tl
  * ----------------------------------------
  */
- @-webkit-keyframes shadow-drop-2-tl {
-        0% {
-          -webkit-transform: translateZ(0) translateX(0) translateY(0);
-                  transform: translateZ(0) translateX(0) translateY(0);
-          -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-                  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-        }
-        100% {
-          -webkit-transform: translateZ(50px) translateX(12px) translateY(12px);
-                  transform: translateZ(50px) translateX(12px) translateY(12px);
-          -webkit-box-shadow: -12px -12px 20px -12px rgba(0, 0, 0, 0.35);
-                  box-shadow: -12px -12px 20px -12px rgba(0, 0, 0, 0.35);
-        }
-      }
-      @keyframes shadow-drop-2-tl {
-        0% {
-          -webkit-transform: translateZ(0) translateX(0) translateY(0);
-                  transform: translateZ(0) translateX(0) translateY(0);
-          -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-                  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-        }
-        100% {
-          -webkit-transform: translateZ(50px) translateX(12px) translateY(12px);
-                  transform: translateZ(50px) translateX(12px) translateY(12px);
-          -webkit-box-shadow: -12px -12px 20px -12px rgba(0, 0, 0, 0.35);
-                  box-shadow: -12px -12px 20px -12px rgba(0, 0, 0, 0.35);
-        }
-      }
-      
+@-webkit-keyframes shadow-drop-2-tl {
+  0% {
+    -webkit-transform: translateZ(0) translateX(0) translateY(0);
+    transform: translateZ(0) translateX(0) translateY(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px) translateX(12px) translateY(12px);
+    transform: translateZ(50px) translateX(12px) translateY(12px);
+    -webkit-box-shadow: -12px -12px 20px -12px rgba(0, 0, 0, 0.35);
+    box-shadow: -12px -12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-2-tl {
+  0% {
+    -webkit-transform: translateZ(0) translateX(0) translateY(0);
+    transform: translateZ(0) translateX(0) translateY(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px) translateX(12px) translateY(12px);
+    transform: translateZ(50px) translateX(12px) translateY(12px);
+    -webkit-box-shadow: -12px -12px 20px -12px rgba(0, 0, 0, 0.35);
+    box-shadow: -12px -12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
 
 /* End Shadow drop */
 
 /* Text Shadow Drop Top */
 
 .text_shadow:hover {
-	-webkit-animation: text-shadow-drop-top 0.6s both;
-	        animation: text-shadow-drop-top 0.6s both;
+  -webkit-animation: text-shadow-drop-top 0.6s both;
+  animation: text-shadow-drop-top 0.6s both;
 }
 
 /* ----------------------------------------------
@@ -138,22 +151,54 @@
  * @animation text-shadow-drop-top
  * ----------------------------------------
  */
- @-webkit-keyframes text-shadow-drop-top {
-        0% {
-          text-shadow: 0 0 0 rgba(0, 0, 0, 0);
-        }
-        100% {
-          text-shadow: 0 -6px 18px rgba(0, 0, 0, 0.35);
-        }
-      }
-      @keyframes text-shadow-drop-top {
-        0% {
-          text-shadow: 0 0 0 rgba(0, 0, 0, 0);
-        }
-        100% {
-          text-shadow: 0 -6px 18px rgba(0, 0, 0, 0.35);
-        }
-      }
-      
+@-webkit-keyframes text-shadow-drop-top {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 -6px 18px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes text-shadow-drop-top {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 -6px 18px rgba(0, 0, 0, 0.35);
+  }
+}
 
 /* End Shadow text drop */
+
+/* Text underline animation */
+
+.underline {
+  color: inherit;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
+}
+
+.underline:hover {
+  text-decoration-color: #5893df;
+}
+
+.underline2 {
+  color: inherit;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
+}
+.underline2:hover {
+  text-decoration-color: #5893df;
+}
+.underline3 {
+  color: inherit;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
+}
+.underline3:hover {
+  text-decoration-color: #fff;
+}
+
+.align_right {
+  text-align: right;
+}
