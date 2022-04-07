@@ -89,26 +89,37 @@ export default function Home() {
                     <div>
                       <span className={styles.underline2}>
                         I'm a software developer at{" "}
-                        <Link href="https://www.foodservicedirect.com/?gclid=Cj0KCQjwl7qSBhD-ARIsACvV1X3iEqSDp85ToLUF44qqHD75pdDNNb_l6pofNXW9Isi04TCScJsu5KIaAmW6EALw_wcB">
-                          <Tooltip
-                            title="Click here to be taken to foodservicedirect.com"
-                            arrow
-                          >
-                            <span>FoodServiceDirect.com.</span>
-                          </Tooltip>
-                        </Link>{" "}
                       </span>
 
                       <span className={styles.underline2}>
                         {" "}
-                        My responsibilities include managing projects, and
-                        developing new software to help create more{" "}
+                        <Tooltip
+                          title="Click here to be taken to foodservicedirect.com"
+                          arrow
+                        >
+                          <a
+                            href="https://www.foodservicedirect.com/?gclid=Cj0KCQjwl7qSBhD-ARIsACvV1X3iEqSDp85ToLUF44qqHD75pdDNNb_l6pofNXW9Isi04TCScJsu5KIaAmW6EALw_wcB"
+                            target="_blank"
+                            className={styles.link_color}
+                          >
+                            FoodServiceDirect.com.
+                          </a>
+                        </Tooltip>{" "}
+                        My
                       </span>
                       <span className={styles.underline2}>
                         {" "}
-                        cost effective processes for my{" "}
+                        responsibilities include managing{" "}
                       </span>
-                      <span className={styles.underline2}>employer.</span>
+                      <span className={styles.underline2}>
+                        projects, and developing new software{" "}
+                      </span>
+                      <span className={styles.underline2}>
+                        to help create more cost effective{" "}
+                      </span>
+                      <span className={styles.underline2}>
+                        solutions for my employer.
+                      </span>
                     </div>
                   </Typography>
                 </div>
@@ -118,7 +129,7 @@ export default function Home() {
           <br></br>
           <br></br>
           <br></br>
-          <Divider orientation="horizontal" color={theme.divider} flexItem />
+          <Divider orientation="horizontal" color="#5893df" flexItem />
           <br></br>
           <br></br>
           <Typography variant="h1" color="#fff">
@@ -130,7 +141,7 @@ export default function Home() {
           <Stack
             direction="row"
             divider={
-              <Divider orientation="vertical" color={theme.divider} flexItem />
+              <Divider orientation="vertical" color="#5893df" flexItem />
             }
             justifyContent="center"
             alignItems="center"
@@ -180,7 +191,7 @@ export default function Home() {
             <br></br>
             <br></br>
             <br></br>
-            <Divider orientation="horizontal" color={theme.divider} flexItem />
+            {/* <Divider orientation="horizontal" color="#5893df" flexItem /> */}
             <br></br>
             <br></br>
             <br></br>
@@ -194,11 +205,7 @@ export default function Home() {
             <Stack
               direction="row"
               divider={
-                <Divider
-                  orientation="vertical"
-                  color={theme.divider}
-                  flexItem
-                />
+                <Divider orientation="vertical" color="#5893df" flexItem />
               }
               justifyContent="center"
               alignItems="center"
@@ -267,7 +274,99 @@ export default function Home() {
                     Lorem Ipsum
                   </Typography>
                   <Typography variant="body" color="#fff">
-                    <span className={styles.underline3}> lorem ipsum...</span>
+                    <span className={styles.underline3}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </span>
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Stack>
+            <br></br>
+            <Divider orientation="horizontal" color="#5893df" flexItem />
+            <br></br>
+            <Stack
+              direction="row"
+              divider={
+                <Divider orientation="vertical" color="#5893df" flexItem />
+              }
+              justifyContent="center"
+              alignItems="center"
+              spacing={4}
+            >
+              <Card
+                sx={{ minHeight: 400, minWidth: 400 }}
+                elevation={11}
+                className={styles.card2}
+              >
+                <CardContent>
+                  <Typography gutterBottom variant="h5" color="#fff">
+                    Lorem ipsum
+                  </Typography>
+                  <Typography variant="body" color="#fff">
+                    <span className={styles.underline3}>
+                      {" "}
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </span>
+                  </Typography>
+                </CardContent>
+              </Card>
+              <Card
+                sx={{ minHeight: 400, minWidth: 400 }}
+                elevation={11}
+                className={styles.card2}
+              >
+                <CardContent>
+                  <Typography gutterBottom variant="h5" color="#fff">
+                    Lorem ipsum
+                  </Typography>
+                  <Typography variant="body" color="#fff">
+                    <span className={styles.underline3}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </span>
+                  </Typography>
+                </CardContent>
+              </Card>
+              <Card
+                sx={{ minHeight: 400, minWidth: 400 }}
+                elevation={11}
+                className={styles.card2}
+              >
+                <CardContent>
+                  <Typography gutterBottom variant="h5" color="#fff">
+                    Lorem Ipsum
+                  </Typography>
+                  <Typography variant="body" color="#fff">
+                    <span className={styles.underline3}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </span>
                   </Typography>
                 </CardContent>
               </Card>

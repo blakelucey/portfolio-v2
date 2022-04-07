@@ -202,3 +202,7 @@
 .align_right {
   text-align: right;
 }
+.link_color {
+  color: #fff;
+  text-decoration: inherit;
+}

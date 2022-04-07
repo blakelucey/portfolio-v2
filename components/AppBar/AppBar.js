@@ -16,6 +16,7 @@ import styles from "./AppBar.module.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FilePresentIcon from "@mui/icons-material/FilePresent";
+import Link from "next/link";
 
 const pages = ["Get in Touch", "About", "Coding Portfolio"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -111,33 +112,43 @@ const ResponsiveAppBar = () => {
             {/* Div here for css styling */}
             <div className={styles.flex}>
               <div className={styles.button_github}>
-              <Tooltip title="Open GitHub" arrow>
-                <GitHubIcon fontSize="large" color="#fff" >
-                  <Button></Button>
-                </GitHubIcon>
-              </Tooltip>
+                <Tooltip title="Open GitHub" arrow>
+                  <a
+                    href="https://github.com/blakelucey?tab=repositories"
+                    target="_blank"
+                    className={styles.icon}
+                  >
+                    <GitHubIcon fontSize="large" color="#fff" />
+                  </a>
+                </Tooltip>
               </div>
               <div className={styles.button_linkedIn}>
-              <Tooltip title="Open LinkedIn" arrow>
-                <LinkedInIcon fontSize="large" color="#fff">
-                  <Button></Button>
-                </LinkedInIcon>
-              </Tooltip>
+                <Tooltip title="Open LinkedIn" arrow>
+                  <a 
+                  href="https://www.linkedin.com/in/blake-lucey" 
+                  target="_blank" 
+                  className={styles.icon}
+                  >
+                  <LinkedInIcon fontSize="large" color="#fff"/>
+                  </a>
+                </Tooltip>
               </div>
               <div className={styles.button_pdf}>
-              <Tooltip title="Open Résumé via Dropbox" arrow>
-                <FilePresentIcon fontSize="large" color="#fff">
-                  <Button></Button>
-                </FilePresentIcon>
-              </Tooltip>
+                <Tooltip title="Open Résumé via Dropbox" arrow>
+                  <a
+                  //href --> dropbox link to résumé
+                  target="_blank"
+                  className={styles.icon}
+                  >
+                  <FilePresentIcon fontSize="large" color="#fff" />
+                  </a>
+                </Tooltip>
               </div>
             </div>
           </Box>
           <Box>
             <div className={styles.center}>
-              <Typography variant="h3">
-                Blake Lucey
-              </Typography>
+              <Typography variant="h3">Blake Lucey</Typography>
             </div>
           </Box>
         </Toolbar>
