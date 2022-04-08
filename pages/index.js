@@ -129,7 +129,7 @@ export default function Home() {
           <br></br>
           <br></br>
           <br></br>
-          <Divider orientation="horizontal" color="#5893df" flexItem />
+          {/* <Divider orientation="horizontal" color="#5893df" flexItem /> */}
           <br></br>
           <br></br>
           <Typography variant="h1" color="#fff">
