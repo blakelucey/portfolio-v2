@@ -112,7 +112,7 @@ export default function Home() {
                         responsibilities include managing{" "}
                       </span>
                       <span className={styles.underline2}>
-                        projects, and developing new software{" "}
+                        projects and developing new software{" "}
                       </span>
                       <span className={styles.underline2}>
                         to help create more cost effective{" "}
