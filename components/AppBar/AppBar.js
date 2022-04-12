@@ -18,7 +18,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FilePresentIcon from "@mui/icons-material/FilePresent";
 import Link from "next/link";
 
-const pages = ["Get in Touch", "About", "Coding Portfolio"];
+const pages = ["Get in Touch","About", "Coding Portfolio"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const ResponsiveAppBar = () => {
@@ -41,7 +41,15 @@ const ResponsiveAppBar = () => {
   };
 
   return (
+    
+
     <AppBar position="fixed">
+      <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+      <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sansita:ital,wght@1,700&display=swap" rel="stylesheet"></link>
+
+      </head>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <Typography
@@ -82,11 +90,16 @@ const ResponsiveAppBar = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem>
+                  <Typography textAlign="center"><a href="mailto:blucey7@gmail.com&subject=Get in Touch&body=Blake,">Get in Touch</a></Typography>
                 </MenuItem>
-              ))}
+                <MenuItem>
+                <Typography textAlign='center'><a href="#about">About</a></Typography>
+                </MenuItem>
+                <MenuItem>
+                <Typography textAlign='center'><a href="#portfolio">Coding Portfolio</a></Typography>
+                </MenuItem>
+            
             </Menu>
           </Box>
           {/* <Typography
@@ -98,15 +111,24 @@ const ResponsiveAppBar = () => {
             LOGO
           </Typography> */}
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
               <Button
-                key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                <div className={styles.underline}>{page}</div>
+                <div className={styles.underline}><a href="mailto:blucey7@gmail.com?&subject=Get in Touch" className={styles.a}>Get in Touch</a></div>
               </Button>
-            ))}
+              <Button
+              onClick={handleCloseNavMenu}
+              sx={{my: 2, color: 'white', display: 'block'}}
+              >
+                <div className={styles.underline} color="#fff"><a href="#about" className={styles.a}>About</a></div>
+              </Button>
+              <Button
+              onClick={handleCloseNavMenu}
+              sx={{my: 2, color: 'white', display: 'block'}}
+              >
+                <div className={styles.underline} color="#fff"><a href="#portfolio" className={styles.a}>Coding Portfolio</a></div>
+              </Button>
           </Box>
           <Box>
             {/* Div here for css styling */}
@@ -148,7 +170,11 @@ const ResponsiveAppBar = () => {
           </Box>
           <Box>
             <div className={styles.center}>
-              <Typography variant="h3">Blake Lucey</Typography>
+              <Typography variant="h3" className={styles.name}>
+                <a href="#home" className={styles.a}>
+                  Blake Lucey
+                  </a>
+                </Typography>
             </div>
           </Box>
         </Toolbar>

@@ -56,7 +56,25 @@
   text-decoration-color: #fff;
 
 }
-
+.a {
+  color: inherit;
+  text-decoration: inherit;
+}
 .icon {
   color: #fff
+}
+
+@font-face {
+  font-family: 'Sansita';
+  src: url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sansita:ital,wght@1,700&display=swap.woff') format('woff');
+}
+.name{
+  color: inherit;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
+  font-family: 'Sansita';
+  font-size: 900;
+}
+.name:hover {
+  text-decoration-color: #fff;
 }

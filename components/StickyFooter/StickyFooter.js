@@ -10,8 +10,8 @@ function Copyright() {
   return (
     <Typography variant="body2" color="#fff" className={styles.center}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
+      <Link color="inherit" href="https://blakelucey.me">
+        blakelucey.me
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}

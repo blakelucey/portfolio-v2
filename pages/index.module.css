@@ -207,3 +207,14 @@
   color: #fff;
   text-decoration: inherit;
 }
+.icon {
+  color: #fff;
+}
+.button_github {
+  padding-top: 10px;
+  position: relative;
+  left: 250px;
+}
+/* .button_github:hover {
+  transform: scale(1.20);
+} */
