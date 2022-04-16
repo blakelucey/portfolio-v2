@@ -17,6 +17,7 @@ import {
   } from "@mui/material";
   import styles from './Portfolio.module.css';
   import GitHubIcon from "@mui/icons-material/GitHub";
+  import Image from 'next/image';
 
 
 
@@ -198,26 +199,18 @@ export default function Portfolio() {
                 >
                   <CardContent>
                     <Typography gutterBottom variant="h5" color="#fff">
-                      <span className={styles.underline3}>Tetris</span>
+                      <span className={styles.underline3}>React Calculator</span>
                     </Typography>
                     <Typography variant="body" color="#fff">
                       <span className={styles.underline3}>
                         <li>
-                          This project was built using python and pygame.  To play the 
-                          game, download the code and run via terminal. 
+                          This was one of my first React projects -- built with ReactJS. 
                         </li> 
-                      </span>
-                      <span className={styles.underline3}>
-                        <li>
-                          This was my first pygame project, so I wasn't sure what to expect
-                          throughout this build.  However, it was a very enjoyable result and 
-                          I look forward to building more games down the road. 
-                        </li>
                       </span>
                       <div className={styles.button_github}>
                       <Tooltip title="Open Repository" arrow>
                           <a
-                            href="https://github.com/blakelucey/tetris"
+                            href="https://github.com/blakelucey/react-calculator"
                             target="_blank"
                             className={styles.icon}
                           >
@@ -228,6 +221,56 @@ export default function Portfolio() {
                     </Typography>
                   </CardContent>
                 </Card>
+                <Card
+                  sx={{ minHeight: 400, minWidth: 400 }}
+                  elevation={11}
+                  className={styles.card2}
+                >
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" color="#fff">
+                      <span className={styles.underline3}>Markdown Previewer</span>
+                    </Typography>
+                    <Typography variant="body" color="#fff">
+                      <span className={styles.underline3}>
+                        <li>
+                          I built this markdown previewer with ReactJS and github flavored
+                          Markdown.
+                        </li>
+                      </span>
+                      <span className={styles.underline3}>
+                      <li>
+                        The basic idea behind the previewer is that a person can type out their 
+                        Markdown and understand what it will look like before copying it into their 
+                        code and commiting it.
+                      </li>
+                      </span>
+                      <div className={styles.button_github}>
+                      <Tooltip title="Open Repository" arrow>
+                          <a
+                            href="https://github.com/blakelucey/Markdown-Previewer"
+                            target="_blank"
+                            className={styles.icon}
+                          >
+                            <GitHubIcon fontSize="large" color="#fff"/>
+                          </a>
+                        </Tooltip>
+                      </div>
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Stack>
+              <br></br>
+              <Divider orientation="horizontal" color="#5893df" flexItem />
+              <br></br>
+              <Stack
+                direction="row"
+                divider={
+                  <Divider orientation="vertical" color="#5893df" flexItem />
+                }
+                justifyContent="center"
+                alignItems="center"
+                spacing={4}
+              >
                 <Card
                   sx={{ minHeight: 400, minWidth: 400 }}
                   elevation={11}
@@ -264,19 +307,6 @@ export default function Portfolio() {
                     </Typography>
                   </CardContent>
                 </Card>
-              </Stack>
-              <br></br>
-              <Divider orientation="horizontal" color="#5893df" flexItem />
-              <br></br>
-              <Stack
-                direction="row"
-                divider={
-                  <Divider orientation="vertical" color="#5893df" flexItem />
-                }
-                justifyContent="center"
-                alignItems="center"
-                spacing={4}
-              >
                 <Card
                   sx={{ minHeight: 400, minWidth: 400 }}
                   elevation={11}
@@ -284,60 +314,26 @@ export default function Portfolio() {
                 >
                   <CardContent>
                     <Typography gutterBottom variant="h5" color="#fff">
-                      <span className={styles.underline3}>Lorem Ipsum</span>
+                      <span className={styles.underline3}>Tetris</span>
                     </Typography>
                     <Typography variant="body" color="#fff">
                       <span className={styles.underline3}>
-                        {" "}
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
+                        <li>
+                          This project was built using python and pygame.  To play the 
+                          game, download the code and run via terminal. 
+                        </li> 
+                      </span>
+                      <span className={styles.underline3}>
+                        <li>
+                          This was my first pygame project, so I wasn't sure what to expect
+                          throughout this build.  However, it was a very enjoyable result and 
+                          I look forward to building more games down the road. 
+                        </li>
                       </span>
                       <div className={styles.button_github}>
                       <Tooltip title="Open Repository" arrow>
                           <a
-                            // href="https://github.com/blakelucey/PERN-STACK-YELP-CLONE"
-                            target="_blank"
-                            className={styles.icon}
-                          >
-                            <GitHubIcon fontSize="large" color="#fff"/>
-                          </a>
-                        </Tooltip>
-                      </div>
-                    </Typography>
-                  </CardContent>
-                </Card>
-                <Card
-                  sx={{ minHeight: 400, minWidth: 400 }}
-                  elevation={11}
-                  className={styles.card2}
-                >
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" color="#fff">
-                      <span className={styles.underline3}>Lorem Ipsum</span>
-                    </Typography>
-                    <Typography variant="body" color="#fff">
-                      <span className={styles.underline3}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
-                      </span>
-                      <div className={styles.button_github}>
-                      <Tooltip title="Open Repository" arrow>
-                          <a
-                            // href="https://github.com/blakelucey/tetris"
+                            href="https://github.com/blakelucey/tetris"
                             target="_blank"
                             className={styles.icon}
                           >
