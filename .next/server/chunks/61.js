@@ -12,7 +12,7 @@ var __webpack_unused_export__;
 __webpack_unused_export__ = ({
   value: true
 });
-__webpack_unused_export__ = Image1;
+exports.default = Image1;
 
 var _react = _interopRequireDefault(__webpack_require__(297));
 
@@ -2513,7 +2513,7 @@ exports.default = Router;
 /***/ 675:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-/* unused reexport */ __webpack_require__(917)
+module.exports = __webpack_require__(917)
 
 
 /***/ }),

@@ -212,7 +212,7 @@
 }
 .button_github {
   padding-top: 10px;
-  position: relative;
+  position: relative; 
   left: 250px;
 }
 /* .button_github:hover {
