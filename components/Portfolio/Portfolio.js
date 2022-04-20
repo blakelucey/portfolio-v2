@@ -25,7 +25,7 @@ import {
 
 export default function Portfolio() {
     return(
-        <Stack direction="column">
+      <div>
             <br></br>
             <br></br>
             <br></br>
@@ -40,12 +40,13 @@ export default function Portfolio() {
               </Typography>
               <br></br>
               <br></br>
+              <Stack direction="column" spacing={6} justifyContent="space-evenly" alignItems="center">
               <Stack
                 direction="row"
                 divider={
                   <Divider orientation="vertical" color="#5893df" flexItem />
                 }
-                justifyContent="center"
+                justifyContent="space-evenly"
                 alignItems="center"
                 spacing={4}
               >
@@ -133,13 +134,14 @@ export default function Portfolio() {
                     </Typography>
                     <Typography variant="body" color="#fff">
                       <span className={styles.underline3}>
-                        <li>Created a web3 version of Amazon using ReactJS and Moralis for 
+                        <li>
+                          I built a web3 version of Amazon.com using ReactJS and Moralis for 
                           user authentication and payment.
                         </li>
                       </span>
                       <span className={styles.underline3}>
                       <li>
-                          See README for instructions on how to authenticate crypto wallet via Moralis. 
+                          See README for instructions on how to authenticate a crypto wallet via Moralis. 
                         </li>
                       </span>
                       <br></br>
@@ -223,12 +225,12 @@ export default function Portfolio() {
                     <Typography variant="body" color="#fff">
                       <span className={styles.underline3}>
                         <li>
-                          This was one of my first React projects -- built with ReactJS. 
+                          The application displays an ios style calculator and correctly performs numeric calculations.
                         </li> 
                       </span>
                       <span className={styles.underline3}>
                         <li>
-                          The application displays an ios style calculator and correctly performs numeric calculations.
+                        This project was built using ReactJS.
                         </li>
                       </span>
                       <br></br>
@@ -339,12 +341,13 @@ export default function Portfolio() {
                     <Typography variant="body" color="#fff">
                       <span className={styles.underline3}>
                         <li>
-                          Lorem Ipsum
+                          I built a drum machine with drum pads that can be pressed either with the mouse or with
+                          corresponding keys on the keypad.  
                         </li> 
                       </span>
                       <span className={styles.underline3}>
                         <li>
-                          Lorem Ipsum
+                          Built with ReactJS.
                         </li>
                       </span>
                       <br></br>
@@ -460,9 +463,11 @@ export default function Portfolio() {
                   </CardContent>
                 </Card>
               </Stack>
-
+              </Stack>
             </div>
-    </Stack>
+            <br></br>
+            <br></br>
+    </div>
 
     )
 }
