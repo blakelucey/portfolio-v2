@@ -344,7 +344,7 @@ export default function Portfolio() {
                     </Typography>
                   </CardContent>
                 </Card>
-                <Card
+                {/* <Card
                   sx={{ minHeight: 400, minWidth: 400 }}
                   elevation={11}
                   className={styles.card2}
@@ -378,7 +378,7 @@ export default function Portfolio() {
                       </div>
                     </Typography>
                   </CardContent>
-                </Card>
+                </Card> */}
               </Stack>
 
             </div>

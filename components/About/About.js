@@ -15,6 +15,10 @@ import {
     Tooltip,
   } from "@mui/material";
   import styles from './About.module.css';
+  import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
+  import ParkIcon from '@mui/icons-material/Park';
+  import NaturePeopleIcon from '@mui/icons-material/NaturePeople';
+  import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 
 
 
@@ -40,11 +44,11 @@ export default function About() {
           elevation={11}
           className={styles.card}
         >
-          <CardActionArea>
+          <CardActionArea className={styles.flex_intro}>
+            <CardMedia>
+              <FitnessCenterIcon sx={{ fontSize: 75 }} className={styles.icon}/>
+              </CardMedia>              
             <CardContent>
-              <Typography gutterBottom variant="h5" color="#fff">
-                <span className={styles.underline3}>Exercise</span>
-              </Typography>
               <Typography variant="body1" color="#fff">
                 <span className={styles.underline3}>
                   {" "}
@@ -59,31 +63,35 @@ export default function About() {
           elevation={11}
           className={styles.card}
         >
-          <CardContent>
-            <Typography gutterBottom variant="h5" color="#fff">
-              <span className={styles.underline3}>Outdoors</span>
-            </Typography>
-            <Typography variant="body" color="#fff">
+          <CardActionArea className={styles.flex_intro}>
+            <CardMedia>
+              <NaturePeopleIcon sx={{ fontSize: 75 }} className={styles.icon} />
+            </CardMedia>
+            <CardContent>
+            <Typography variant="body1" color="#fff">
               <span className={styles.underline3}> Being outside...</span>
             </Typography>
-          </CardContent>
+            </CardContent>
+          </CardActionArea>
         </Card>
         <Card
           sx={{ minWidth: 250 }}
           elevation={11}
           className={styles.card}
         >
+          <CardActionArea className={styles.flex_intro}>
+            <CardMedia>
+              <TravelExploreIcon sx={{ fontSize: 75 }} className={styles.icon} />
+            </CardMedia>
           <CardContent>
-            <Typography gutterBottom variant="h5" color="#fff">
-              <span className={styles.underline3}>Travel</span>
-            </Typography>
-            <Typography variant="body" color="#fff">
+            <Typography variant="body1" color="#fff">
               <span className={styles.underline3}>
                 {" "}
                 And traveling as much as possible...
               </span>
             </Typography>
           </CardContent>
+          </CardActionArea>
         </Card>
       </Stack>
       </div>

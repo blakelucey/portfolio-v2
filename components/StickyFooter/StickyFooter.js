@@ -53,7 +53,7 @@ export default function Footer() {
       >
         <Container maxWidth="sm">
           <Typography variant="body1" color="#fff" className={styles.center}>
-            Blake Lucey's portfolio
+            Blake Lucey's Portfolio
           </Typography>
           <Copyright />
         </Container>
