@@ -18,6 +18,7 @@ import {
   import styles from './Portfolio.module.css';
   import GitHubIcon from "@mui/icons-material/GitHub";
   import Image from 'next/image';
+  import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 
 
@@ -54,6 +55,7 @@ export default function Portfolio() {
                   className={styles.card2}
                 >
                   <CardContent>
+                  <div className={styles.flex_intro}>
                     <Typography gutterBottom variant="h5" color="#fff">
                       <span className={styles.underline3}>
                         Automated Mass Email
@@ -80,6 +82,7 @@ export default function Portfolio() {
                         </span>
                       </li>
                     </Typography>
+                    </div>
                   </CardContent>
                 </Card>
                 <Card
@@ -88,6 +91,7 @@ export default function Portfolio() {
                   className={styles.card2}
                 >
                   <CardContent>
+                  <div className={styles.flex_intro}>
                     <Typography gutterBottom variant="h5" color="#fff">
                       <span className={styles.underline3}>
                         Computer Vision Project
@@ -114,6 +118,7 @@ export default function Portfolio() {
                         </li>
                       </span>
                     </Typography>
+                    </div>
                   </CardContent>
                 </Card>
                 <Card
@@ -122,6 +127,7 @@ export default function Portfolio() {
                   className={styles.card2}
                 >
                   <CardContent>
+                  <div className={styles.flex_intro}>
                     <Typography gutterBottom variant="h5" color="#fff">
                       <span className={styles.underline3}>Amazon Clone</span>
                     </Typography>
@@ -136,6 +142,8 @@ export default function Portfolio() {
                           See README for instructions on how to authenticate crypto wallet via Moralis. 
                         </li>
                       </span>
+                      <br></br>
+                      <div className={styles.flex}>
                       <div className={styles.button_github}>
                         <Tooltip title="Open Repository" arrow>
                           <a
@@ -147,7 +155,9 @@ export default function Portfolio() {
                           </a>
                         </Tooltip>
                       </div>
+                      </div>
                     </Typography>
+                    </div>
                   </CardContent>
                 </Card>
               </Stack>
@@ -169,15 +179,21 @@ export default function Portfolio() {
                   className={styles.card2}
                 >
                   <CardContent>
+                  <div className={styles.flex_intro}>
                     <Typography gutterBottom variant="h5" color="#fff">
                       <span className={styles.underline3}>Yelp Clone</span>
                     </Typography>
                     <Typography variant="body" color="#fff">
                       <span className={styles.underline3}>
                         <li>
-                          Created a yelp clone via Postgres, Express, ReactJS and NodeJS.
+                          I created a clone of the review site Yelp.
+                        </li>
+                        <li>
+                          This was done using Postgres, Express, ReactJS and NodeJS.
                         </li>
                       </span>
+                      <br></br>
+                      <div className={styles.flex}>
                       <div className={styles.button_github}>
                         <Tooltip title="Open Repository" arrow>
                           <a
@@ -189,7 +205,9 @@ export default function Portfolio() {
                           </a>
                         </Tooltip>
                       </div>
+                      </div>
                     </Typography>
+                    </div>
                   </CardContent>
                 </Card>
                 <Card
@@ -198,6 +216,7 @@ export default function Portfolio() {
                   className={styles.card2}
                 >
                   <CardContent>
+                  <div className={styles.flex_intro}>
                     <Typography gutterBottom variant="h5" color="#fff">
                       <span className={styles.underline3}>React Calculator</span>
                     </Typography>
@@ -207,6 +226,13 @@ export default function Portfolio() {
                           This was one of my first React projects -- built with ReactJS. 
                         </li> 
                       </span>
+                      <span className={styles.underline3}>
+                        <li>
+                          The application displays an ios style calculator and correctly performs numeric calculations.
+                        </li>
+                      </span>
+                      <br></br>
+                      <div className={styles.flex}>
                       <div className={styles.button_github}>
                       <Tooltip title="Open Repository" arrow>
                           <a
@@ -218,7 +244,20 @@ export default function Portfolio() {
                           </a>
                         </Tooltip>
                       </div>
+                      <div>
+                          <Tooltip title="Open React Calculator" arrow>
+                            <a 
+                            href="https://happy-murdock-8521d6.netlify.app/"
+                            target="_blank"
+                            className={styles.icon}
+                            >
+                              <OpenInNewIcon fontSize="large" color="#fff"/>
+                           </a>
+                          </Tooltip>
+                        </div>
+                        </div>
                     </Typography>
+                    </div>
                   </CardContent>
                 </Card>
                 <Card
@@ -227,6 +266,7 @@ export default function Portfolio() {
                   className={styles.card2}
                 >
                   <CardContent>
+                  <div className={styles.flex_intro}>
                     <Typography gutterBottom variant="h5" color="#fff">
                       <span className={styles.underline3}>Markdown Previewer</span>
                     </Typography>
@@ -244,18 +284,33 @@ export default function Portfolio() {
                         code and commiting it.
                       </li>
                       </span>
-                      <div className={styles.button_github}>
-                      <Tooltip title="Open Repository" arrow>
-                          <a
-                            href="https://github.com/blakelucey/Markdown-Previewer"
+                      <br></br>
+                      <div className={styles.flex}>
+                        <div className={styles.button_github}>
+                          <Tooltip title="Open Repository" arrow>
+                            <a
+                              href="https://github.com/blakelucey/Markdown-Previewer"
+                              target="_blank"
+                              className={styles.icon}
+                            >
+                              <GitHubIcon fontSize="large" color="#fff"/>
+                            </a>
+                          </Tooltip>
+                        </div>
+                        <div>
+                          <Tooltip title="Open Markdown Previewer" arrow>
+                            <a 
+                            href="https://affectionate-tereshkova-098232.netlify.app/"
                             target="_blank"
                             className={styles.icon}
-                          >
-                            <GitHubIcon fontSize="large" color="#fff"/>
-                          </a>
-                        </Tooltip>
+                            >
+                              <OpenInNewIcon fontSize="large" color="#fff"/>
+                           </a>
+                          </Tooltip>
+                        </div>
                       </div>
                     </Typography>
+                    </div>
                   </CardContent>
                 </Card>
               </Stack>
@@ -277,6 +332,57 @@ export default function Portfolio() {
                   className={styles.card2}
                 >
                   <CardContent>
+                  <div className={styles.flex_intro}>
+                    <Typography gutterBottom variant="h5" color="#fff">
+                      <span className={styles.underline3}>Drum Machine</span>
+                    </Typography>
+                    <Typography variant="body" color="#fff">
+                      <span className={styles.underline3}>
+                        <li>
+                          Lorem Ipsum
+                        </li> 
+                      </span>
+                      <span className={styles.underline3}>
+                        <li>
+                          Lorem Ipsum
+                        </li>
+                      </span>
+                      <br></br>
+                      <div className={styles.flex}>
+                      <div className={styles.button_github}>
+                      <Tooltip title="Open Repository" arrow>
+                          <a
+                            href="https://github.com/blakelucey/Drum-Machine"
+                            target="_blank"
+                            className={styles.icon}
+                          >
+                            <GitHubIcon fontSize="large" color="#fff"/>
+                          </a>
+                        </Tooltip>
+                      </div>
+                      <div>
+                          <Tooltip title="Open Drum Machine" arrow>
+                            <a 
+                            href="https://dreamy-banach-11c214.netlify.app/"
+                            target="_blank"
+                            className={styles.icon}
+                            >
+                              <OpenInNewIcon fontSize="large" color="#fff"/>
+                           </a>
+                          </Tooltip>
+                        </div>
+                        </div>
+                    </Typography>
+                    </div>
+                  </CardContent>
+                </Card>
+                <Card
+                  sx={{ minHeight: 400, minWidth: 400 }}
+                  elevation={11}
+                  className={styles.card2}
+                >
+                  <CardContent>
+                  <div className={styles.flex_intro}>
                     <Typography gutterBottom variant="h5" color="#fff">
                       <span className={styles.underline3}>Tic Tac Toe</span>
                     </Typography>
@@ -293,6 +399,8 @@ export default function Portfolio() {
                           be an interesting way to approach basic Machine Learning fundamentals.
                         </li>
                       </span>
+                      <br></br>
+                      <div className={styles.flex}>
                       <div className={styles.button_github}>
                       <Tooltip title="Open Repository" arrow>
                           <a
@@ -303,8 +411,10 @@ export default function Portfolio() {
                             <GitHubIcon fontSize="large" color="#fff"/>
                           </a>
                         </Tooltip>
+                      </div>                        
                       </div>
                     </Typography>
+                    </div>
                   </CardContent>
                 </Card>
                 <Card
@@ -313,6 +423,7 @@ export default function Portfolio() {
                   className={styles.card2}
                 >
                   <CardContent>
+                  <div className={styles.flex_intro}>
                     <Typography gutterBottom variant="h5" color="#fff">
                       <span className={styles.underline3}>Tetris</span>
                     </Typography>
@@ -330,6 +441,8 @@ export default function Portfolio() {
                           I look forward to building more games down the road. 
                         </li>
                       </span>
+                      <br></br>
+                      <div className={styles.flex}>
                       <div className={styles.button_github}>
                       <Tooltip title="Open Repository" arrow>
                           <a
@@ -341,44 +454,11 @@ export default function Portfolio() {
                           </a>
                         </Tooltip>
                       </div>
-                    </Typography>
-                  </CardContent>
-                </Card>
-                {/* <Card
-                  sx={{ minHeight: 400, minWidth: 400 }}
-                  elevation={11}
-                  className={styles.card2}
-                >
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" color="#fff">
-                      <span className={styles.underline3}>Lorem Ipsum</span>
-                    </Typography>
-                    <Typography variant="body" color="#fff">
-                      <span className={styles.underline3}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
-                      </span>
-                      <div className={styles.button_github}>
-                      <Tooltip title="Open Repository" arrow>
-                          <a
-                            // href="https://github.com/blakelucey/tic_tac_toe"
-                            target="_blank"
-                            className={styles.icon}
-                          >
-                            <GitHubIcon fontSize="large" color="#fff"/>
-                          </a>
-                        </Tooltip>
                       </div>
                     </Typography>
+                    </div>
                   </CardContent>
-                </Card> */}
+                </Card>
               </Stack>
 
             </div>
