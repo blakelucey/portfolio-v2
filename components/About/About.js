@@ -44,7 +44,7 @@ export default function About() {
           elevation={11}
           className={styles.card}
         >
-          <CardActionArea className={styles.p_position}>
+          <CardActionArea className={styles.flex_intro}>
             <CardMedia >
               <FitnessCenterIcon sx={{ fontSize: 75 }} className={styles.icon}/>
               </CardMedia>              
@@ -63,7 +63,7 @@ export default function About() {
           elevation={11}
           className={styles.card}
         >
-          <CardActionArea className={styles.p_position}>
+          <CardActionArea className={styles.flex_intro}>
             <CardMedia>
               <NaturePeopleIcon sx={{ fontSize: 75 }} className={styles.icon} />
             </CardMedia>
@@ -79,7 +79,7 @@ export default function About() {
           elevation={11}
           className={styles.card}
         >
-          <CardActionArea className={styles.p_position}>
+          <CardActionArea className={styles.flex_intro}>
             <CardMedia>
               <TravelExploreIcon sx={{ fontSize: 75 }} className={styles.icon} />
             </CardMedia>
