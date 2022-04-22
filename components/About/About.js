@@ -44,9 +44,8 @@ export default function About() {
           elevation={11}
           className={styles.card}
         >
-          <div className={styles.flex_intro}>
-          <CardActionArea >
-            <CardMedia>
+          <CardActionArea className={styles.flex_intro}>
+            <CardMedia >
               <FitnessCenterIcon sx={{ fontSize: 75 }} className={styles.icon}/>
               </CardMedia>              
             <CardContent>
@@ -58,7 +57,6 @@ export default function About() {
               </Typography>
             </CardContent>
           </CardActionArea>
-          </div>
         </Card>
         <Card
           sx={{ minWidth: 250 }}
