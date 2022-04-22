@@ -44,7 +44,7 @@ export default function About() {
           elevation={11}
           className={styles.card}
         >
-          <CardActionArea className={styles.flex_intro}>
+          <CardActionArea className={styles.p_position}>
             <CardMedia >
               <FitnessCenterIcon sx={{ fontSize: 75 }} className={styles.icon}/>
               </CardMedia>              
@@ -63,7 +63,7 @@ export default function About() {
           elevation={11}
           className={styles.card}
         >
-          <CardActionArea className={styles.flex_intro}>
+          <CardActionArea className={styles.p_position}>
             <CardMedia>
               <NaturePeopleIcon sx={{ fontSize: 75 }} className={styles.icon} />
             </CardMedia>
@@ -79,7 +79,7 @@ export default function About() {
           elevation={11}
           className={styles.card}
         >
-          <CardActionArea className={styles.flex_intro}>
+          <CardActionArea className={styles.p_position}>
             <CardMedia>
               <TravelExploreIcon sx={{ fontSize: 75 }} className={styles.icon} />
             </CardMedia>
@@ -87,7 +87,8 @@ export default function About() {
             <Typography variant="body1" color="#fff">
               <span className={styles.underline3}>
                 {" "}
-                And traveling as much as possible...
+                And traveling as much <br></br>
+                as possible...
               </span>
             </Typography>
           </CardContent>
