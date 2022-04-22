@@ -121,6 +121,7 @@
   }
   .icon {
     color: #fff;
+    width: 50%;
   }
   .button_github {
     padding-top: 10px;
@@ -180,5 +181,5 @@
     display: flex;
     flex-direction: column;
     /* padding: 50px; */
-    height: 150%;
+    /* height: 150%; */
   }
