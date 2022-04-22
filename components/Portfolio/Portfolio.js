@@ -66,20 +66,19 @@ export default function Portfolio() {
                       {" "}
                       <li>
                         <span className={styles.underline3}>
-                          Throughout the course of this project I wrote two
-                          api's. One to fetch data from the MySQL database and
-                          the other to handle parameters used in the email
-                          template.
+                        Throughout this project, I wrote two APIs. 
+                        One to fetch data from the MySQL database 
+                        and the other to handle parameters used in the 
+                        email template.
                         </span>
                       </li>
                       <li>
                         <span className={styles.underline3}>
-                          Mass emails are sent out based on a data table. 
-                          A customer service representative selects
-                          a checkbox based on criteria presented in the table. 
-                          When the representative has finished going
-                          through the table they click a button that
-                          sends out all of the emails.
+                        Mass emails are sent out based on a data table. 
+                        A customer service representative selects a checkbox 
+                        based on the criteria presented in the table. When the 
+                        representative has finished going through the table, 
+                        they click a button that sends out all emails.
                         </span>
                       </li>
                     </Typography>
@@ -101,21 +100,24 @@ export default function Portfolio() {
                     <Typography variant="body" color="#fff">
                       <span className={styles.underline3}>
                         <li>
-                          Acted as the Project Manager in coordinating with my
-                          Tech Lead and the data science team.
+                        I am acting as the Project Manager in 
+                        coordination with my Tech Lead and the 
+                        data science team.
                         </li>
                       </span>
                       <span className={styles.underline3}>
                         <li>
-                          Collected a dataset for training, implemented the
-                          trained model, and ensured that each component of this
-                          project functioned as intended.
+                        Collecting a dataset for training, 
+                        implementing the trained model, and 
+                        ensuring that each project component 
+                        functions as intended.
                         </li>
                       </span>
                       <span className={styles.underline3}>
                         <li>
-                          This project is still underway.  Once successfully proven it will be
-                          implemented on all shipping lines.
+                          This project is still underway. 
+                          Once successfully proven, we will 
+                          implement it on all shipping lines.
                         </li>
                       </span>
                     </Typography>
@@ -135,13 +137,17 @@ export default function Portfolio() {
                     <Typography variant="body" color="#fff">
                       <span className={styles.underline3}>
                         <li>
-                          I built a web3 version of Amazon.com using ReactJS and Moralis for 
-                          user authentication and payment.
+                          Built a web3 version of Amazon.com.
                         </li>
                       </span>
                       <span className={styles.underline3}>
                       <li>
                           See README for instructions on how to authenticate a crypto wallet via Moralis. 
+                        </li>
+                      </span>
+                      <span className={styles.underline3}>
+                        <li>
+                        Built using ReactJS and Moralis for user authentication and payment.
                         </li>
                       </span>
                       <br></br>
@@ -188,10 +194,12 @@ export default function Portfolio() {
                     <Typography variant="body" color="#fff">
                       <span className={styles.underline3}>
                         <li>
-                          I created a clone of the review site Yelp.
+                          Created a clone of the review site Yelp.
                         </li>
+                        </span>
+                        <span className={styles.underline3}>
                         <li>
-                          This was done using Postgres, Express, ReactJS and NodeJS.
+                        Implemented this application using Postgres, Express, ReactJS, and NodeJS.
                         </li>
                       </span>
                       <br></br>
@@ -230,7 +238,7 @@ export default function Portfolio() {
                       </span>
                       <span className={styles.underline3}>
                         <li>
-                        This project was built using ReactJS.
+                        Built this project using ReactJS.
                         </li>
                       </span>
                       <br></br>
@@ -275,15 +283,15 @@ export default function Portfolio() {
                     <Typography variant="body" color="#fff">
                       <span className={styles.underline3}>
                         <li>
-                          I built this markdown previewer with ReactJS and github flavored
-                          Markdown.
+                        Using this Markdown Previewer, a person can 
+                        type out their Markdown and understand what 
+                        it will look like before copying it into their 
+                        code and committing it.                        
                         </li>
                       </span>
                       <span className={styles.underline3}>
                       <li>
-                        The basic idea behind the previewer is that a person can type out their 
-                        Markdown and understand what it will look like before copying it into their 
-                        code and commiting it.
+                        Built this application with ReactJS and GitHub flavored Markdown.
                       </li>
                       </span>
                       <br></br>
@@ -341,8 +349,8 @@ export default function Portfolio() {
                     <Typography variant="body" color="#fff">
                       <span className={styles.underline3}>
                         <li>
-                          I built a drum machine with drum pads that can be pressed either with the mouse or with
-                          corresponding keys on the keypad.  
+                        Built a drum machine with drum pads that the user 
+                        can press either with the mouse or corresponding keyboard keys. 
                         </li> 
                       </span>
                       <span className={styles.underline3}>
@@ -392,14 +400,13 @@ export default function Portfolio() {
                     <Typography variant="body" color="#fff">
                       <span className={styles.underline3}>
                         <li>
-                          I also built this game via python and pygame.  To play, 
-                          download the code and run via terminal.
+                        Tic Tac Toe was an intriguing project to approach basic Machine Learning fundamentals.                          
                         </li>
                       </span>
                       <span className={styles.underline3}>
                         <li>
-                          I chose Tic Tac Toe for this project because I thought it would
-                          be an interesting way to approach basic Machine Learning fundamentals.
+                        Built this game via python and pygame. 
+                        To play, download the code and run via terminal.
                         </li>
                       </span>
                       <br></br>
@@ -433,15 +440,13 @@ export default function Portfolio() {
                     <Typography variant="body" color="#fff">
                       <span className={styles.underline3}>
                         <li>
-                          This project was built using python and pygame.  To play the 
-                          game, download the code and run via terminal. 
+                        Tetris was my first pygame project, and I ended up with a gratifying result.                 
                         </li> 
                       </span>
                       <span className={styles.underline3}>
                         <li>
-                          This was my first pygame project, so I wasn't sure what to expect
-                          throughout this build.  However, it was a very enjoyable result and 
-                          I look forward to building more games down the road. 
+                        Built this project using python and pygame. 
+                        To play the game, download the code and run it via terminal. 
                         </li>
                       </span>
                       <br></br>
