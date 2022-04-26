@@ -1,6 +1,10 @@
 .padding {
     padding: 30px;
   }
+/* .padding_sides {
+  margin-right: auto;
+  margin-left: auto;
+} */
   
   .card {
     padding: 30px;
@@ -121,7 +125,9 @@
   }
   .icon {
     color: #fff;
-    width: 20%;
+    position: absolute;
+    right: 60px;
+    top: 40px;
   }
   .button_github {
     padding-top: 10px;
@@ -177,14 +183,19 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  .flex_intro {
+  /* .flex_intro {
     display: flex;
     flex-direction: column;
-    /* padding: 50px; */
-    /* height: 150%; */
-  }
-  .p_position{
+     padding: 50px;
+    height: 150%;
+    margin: auto;
+  } */
+
+  .center {
     position: absolute;
-    width: 50%;
-    height: 35%;
+    width: 100%;
+    top: 125px;
+    /* padding: 30px; */
+    margin: 10px;
+    text-align: start;
   }

@@ -23,6 +23,7 @@
     "remark": "13",
     "remark-html": "13",
     "sass": "^1.43.4",
+    "sharp": "^0.30.4",
     "tailwindcss": "^2.2.19"
   }
 }

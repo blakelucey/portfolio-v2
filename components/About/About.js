@@ -44,55 +44,66 @@ export default function About() {
           elevation={11}
           className={styles.card}
         >
+          <div>
           <CardActionArea className={styles.flex_intro}>
             <CardMedia >
               <FitnessCenterIcon sx={{ fontSize: 75 }} className={styles.icon}/>
               </CardMedia>              
-            <CardContent>
+            <CardContent className={styles.center}>
               <Typography variant="body1" color="#fff">
+                <div>
                 <span className={styles.underline3}>
-                  {" "}
-                  I love exercising...
+                I love exercising...
                 </span>
+                </div>
               </Typography>
             </CardContent>
           </CardActionArea>
+          </div>
         </Card>
         <Card
           sx={{ minWidth: 250 }}
           elevation={11}
           className={styles.card}
         >
+          <div>
           <CardActionArea className={styles.flex_intro}>
             <CardMedia>
               <NaturePeopleIcon sx={{ fontSize: 75 }} className={styles.icon} />
             </CardMedia>
-            <CardContent>
+            <CardContent className={styles.center}>
             <Typography variant="body1" color="#fff">
-              <span className={styles.underline3}> Being outside...</span>
+              <div>
+              <span className={styles.underline3}>
+                Being outside...
+                 </span>
+                 </div>
             </Typography>
             </CardContent>
           </CardActionArea>
+          </div>
         </Card>
         <Card
           sx={{ minWidth: 250 }}
           elevation={11}
           className={styles.card}
         >
+          <div>
           <CardActionArea className={styles.flex_intro}>
-            <CardMedia>
-              <TravelExploreIcon sx={{ fontSize: 75 }} className={styles.icon} />
+            <CardMedia className={styles.icon}>
+              <TravelExploreIcon sx={{ fontSize: 75 }}  />
             </CardMedia>
-          <CardContent>
+          <CardContent className={styles.center}>
             <Typography variant="body1" color="#fff">
+              <div>
               <span className={styles.underline3}>
-                {" "}
-                And traveling as much <br></br>
-                as possible...
+              And traveling as much as possible...
               </span>
+              </div>
             </Typography>
           </CardContent>
           </CardActionArea>
+          </div>
         </Card>
       </Stack>
       </div>
