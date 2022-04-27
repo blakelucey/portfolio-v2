@@ -158,7 +158,7 @@ const ResponsiveAppBar = () => {
               <div className={styles.button_pdf}>
                 <Tooltip title="Open Résumé via Dropbox" arrow>
                   <a
-                  //href --> dropbox link to résumé
+                  href="https://www.dropbox.com/s/0tecouxjklftjj0/r%C3%A9sum%C3%A9.pdf?dl=0"
                   target="_blank"
                   className={styles.icon}
                   >
